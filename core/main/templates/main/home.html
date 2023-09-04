@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <H1>Hello</H1>
+    <H2>Welcome to my 1st steps</H2>
+
+    <form method = 'post' >
+        {% csrf_token %}
+
+        <p>
+            <input type="number" name="a" placeholder="Enter a Number" id="">
+        </p>
+        <p>
+            <input type="text" name="c" placeholder="Enter +-*/" id="">
+        </p>
+        <p>
+            <input type="number" name="b" placeholder="Enter a Number" id="">
+        </p>
+        <button>Submit</button>
+
+        <H3>Result = {{ res }}</H3>
+
+    </form>
+    
+</body>
+</html>
